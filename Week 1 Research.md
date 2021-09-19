@@ -2,10 +2,11 @@
 
 ## Digital 
 **Digit**
-0에서 9까지의 아라비아 숫자
+: 0에서 9까지의 아라비아 숫자
+
 (https://www.merriam-webster.com/dictionary/digit)
 
-Digital 디지털
+""Digital 디지털""
 : 0과 1의 신호로 계수화 하는 것.
 
 binary는 1과 0 단 두개의 상태, 즉 on과 off 또는 high와 low만을 갖고 있는 이진법을 뜻하며 이것을 활용하여 디지털 시스템에 활용함.
