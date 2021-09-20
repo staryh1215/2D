@@ -4,7 +4,7 @@
 **Digit**
 : 0에서 9까지의 아라비아 숫자
 
-(https://www.merriam-webster.com/dictionary/digit)
+[merriam](https://www.merriam-webster.com/dictionary/digit)
 
 **Digital 디지털**
 : 0과 1의 신호로 계수화 하는 것.
