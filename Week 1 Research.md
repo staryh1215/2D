@@ -58,6 +58,7 @@ Ex. (0,0,0): 검은색 / (255,255,255): 흰색 / (255,0,0): 빨강
 : 시안Cyan, 마젠타Magenta, 노랑Yellow, 검정Black으로 이루어진 잉크 색 구현 채계. 주로 인쇄물에서 색을 표현하기 위해 사용됨.
 [두산백과](https://terms.naver.com/entry.naver?docId=3347335&cid=40942&categoryId=32828)      
 색상값이 올라갈 때 색이 어두워지며 검정색에 가까워지는 _감산혼합_ 방식. 
+<img src="https://cdn-befan.nitrocdn.com/ZqEoWphcmcAXQbFBKaYjfUBYIqNFiJSC/assets/static/optimized/rev-4b3697d/wp-content/uploads/2020/06/CYMK-colors.png" width="300" height="300">
 
 **Bit**
 : 2진법 표기의 단위. 모든 수를 0과 1로만 표기하는데 이 0 또는 1이 각각 하나의 비트가 됨.    
