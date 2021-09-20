@@ -37,12 +37,11 @@ binary는 1과 0 단 두개의 상태, 즉 on과 off 또는 high와 low만을 �
 : 빛을 흡수하고 반사하는 결과로 나타나는 사물의 물리적 현상. 무채색과 유채색으로 나뉘며 유채색은 어느 색이나 색상, 명도, 채도를 모두 가지고 있다.
 [색채용어사전](https://terms.naver.com/entry.naver?docId=270032&cid=42641&categoryId=42641)
 
-색상 Hue: 색상환 내에서의 위치.   색상환: 색의 계통에 따라 색상을 둥글게 배열한 것.
-
-명도 Value: 색의 밝고 어두운 정도. 다른 색에 비해서 얼마나 밝고 어두운가에 따라 명도가 높고 낮음이 결정됨. 
-[색채용어사전](https://terms.naver.com/entry.naver?docId=269768&ref=y&cid=42641&categoryId=42641)
-
-채도 Saturation: 색의 순수한 정도. 색의 포화도(S/Saturation) 숫자가 높으면 순색에 가까워짐.
+색상 Hue: 색상환 내에서의 위치. <br>
+색상환: 색의 계통에 따라 색상을 둥글게 배열한 것. <br>
+명도 Value: 색의 밝고 어두운 정도. 다른 색에 비해서 얼마나 밝고 어두운가에 따라 명도가 높고 낮음이 결정됨.
+[색채용어사전](https://terms.naver.com/entry.naver?docId=269768&ref=y&cid=42641&categoryId=42641) <br>
+채도 Saturation: 색의 순수한 정도. 색의 포화도(S/Saturation) 숫자가 높으면 순색에 가까워짐. 
 [색채용어사전](https://terms.naver.com/entry.naver?docId=270651&cid=42641&categoryId=42641)
 
 
