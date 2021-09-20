@@ -52,6 +52,7 @@ binary는 1과 0 단 두개의 상태, 즉 on과 off 또는 high와 low만을 �
 빛의 3원색을 _가산혼합_ 하여 색을 나타내는 방식. 각각 0~255까지의 숫자를 사용해 그 정도를 표현함.     
 Ex. (0,0,0): 검은색 / (255,255,255): 흰색 / (255,0,0): 빨강
 [두산백과](https://terms.naver.com/entry.naver?docId=3340558&cid=40942&categoryId=32828)
+![RGB](https://www.hisour.com/wp-content/uploads/2018/03/RGB-color-model.jpg)
 
 **CMYK**
 : 시안Cyan, 마젠타Magenta, 노랑Yellow, 검정Black으로 이루어진 잉크 색 구현 채계. 주로 인쇄물에서 색을 표현하기 위해 사용됨.
