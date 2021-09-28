@@ -16,9 +16,15 @@ https://frauniemand.tistory.com/8
 https://blog.frame.io/2019/09/09/guide-to-aces/  
 https://www.oscars.org/science-technology/sci-tech-projects/aces  
 https://learn.foundry.com/course/5515/view/color-management-fundamentals-aces-workflows-in-nuke  
+https://blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=baekhyebin&logNo=222092359528  
+http://journal.kobeta.com/%EC%B0%B8%EA%B4%80%EA%B8%B0-aces-%EC%8B%9C%EC%8A%A4%ED%85%9C/  
+http://schoolofcolor.org/post-hdtv-part-2/
 
 ## Premultiplication  
 Multipl 하기 전. 
+https://www.schoolofmotion.com/blog/premultiplication/  
+https://nanite.tistory.com/98  
+
 **포토샵에서**   
 https://limnu.com/premultiplied-alpha-primer-artists/  
 https://forums.cgsociety.org/t/unpremultiplied-alpha-in-photoshop/1053929  
