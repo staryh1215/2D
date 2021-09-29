@@ -36,10 +36,24 @@ jpg 소스는 이미 사진을 찍을 때 gamma 2.2가 적용되어 밝아져 �
 
 
 ## Linear Workflow  
-**찾아보기**  
-제작할 때 리니어화 시켜서 제작해야 함.    
+모든 그래픽 작업이 **선형 색 공간 Linear Color Space** 에서 이루어지는 방식.    
+선형 색 공간과 감마 색 공간(Gamma Color Space) 의 차이에 대해 이해해야 함.   
+<img src="https://user-images.githubusercontent.com/60923302/118788622-ecc46600-b8ce-11eb-843c-c985eb6be98e.png" width="300" height="300">
+
+감마 색 공간이 선형 색 공간 보다 자연스러워 보임.    
+사람의 눈은 어두운 색에 민감하기 때문에 색이 밝아지는 정도를 어두운 색이 밀집해 있는 왼쪽에서 더 민감하게 느끼고, 따라서 감마 색 공간의 그라데이션이 더 자엽스럽다 느껴지지만 실제 수학적으로 정확한 그라데이션은 선형 색 공간.     
+선형 색 공간의 그라데이션을 감마 색 공간처럼 눈에 자연스럽게 만드려면 감마값Gamma를 조정해야 함.
+
+jpg와 같은 이미지들은 자체적으로 감마 보정을 해 실제 데이터보다 밝게 저장함.    
+이를 디스플레이 이미지는 다시 감마 보정을 하여 어둡게 만들어 우리가 원하던 원본 이미지를 출력하는 것.(감마 보정을 두 번 거침)  
+
+
+감마 색 공간에서의 이미지들은 _이미 한 번 밝아진_ 이미지.   
+선형 색 공간에서의 이미지(감마보정을 한 번 거친)들은 _원래 색상과 밝기로 되돌린_ 이미지. 때문에 선형 색 공간에서 작업을 하는 것이 권장됨. 이를 Linear Workflow 라고 하는 것.
+[선형워크플로우란](https://kyoungwhankim.github.io/ko/blog/color_linearworkflow/)
+
+
 https://forum.reallusion.com/Topic308094.aspx  
-https://blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=zinblue&logNo=140199808147  
 https://frauniemand.tistory.com/8  
 
 
