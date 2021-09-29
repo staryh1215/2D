@@ -59,15 +59,37 @@ https://forum.reallusion.com/Topic308094.aspx
 https://frauniemand.tistory.com/8  
 
 
-## ACES  
+## ACES - The Academy Color Encoding System   
+**영상 표준 색 관리 시스템**   
+영화나 TV를 제작하는 과정에서 색상 관리를 위해 정한 업계 표준. 디지털 카메라 및 여러 촬영 방식이 늘어남에 따라 소스마다 색 공간이 다르다는 문제점 발생. 때문에 이를 통일시켜 제작, 포스트 프로덕션에서 문제점을 보완할 수 있도록 제시된 색상 관리 및 이미지 교환 시스템.    
+[방송기술저널, ACES 시스템을 활용한 HDR](http://journal.kobeta.com/%EC%B0%B8%EA%B4%80%EA%B8%B0-aces-%EC%8B%9C%EC%8A%A4%ED%85%9C/)
+
+
+<img src="https://i1.wp.com/schoolofcolor.org/wp-content/uploads/2018/11/Post_HDTV_Workflow_Part_II_03.jpg?resize=768%2C866" width="300" height="500">
+
+**ACES의 장점**   
+1. 후반작업에서의 색보정 불확실성 제거 International Standard Transformation 
+2. 넓은 색 공간과 색 심도 High Dynamic Rage + Wide Gamut: 16bit, 32bit, 25stop 이상의 규격을 가지고 있어 현존하는 모든 카메라의 다이나믹 레인지와 컬러 영역 커버 가능. 
+3. 따라서 풍부한 색감과 계조 유지 가능
+4. 화면지향 선형화Scene Referred Linearization 기술을 사용, 후반 작업에서 보다 자유로운 창작환경 제공    
+[포스트 HDTV 시대 이후 영상기술 – ACES V1.0](http://schoolofcolor.org/post-hdtv-part-2/)
+
+- Dynamic Range    
+디지털 카메라의 이미지 센서는 일정한 밝기 이상의 빛에 노출되면 OETF 반응을 해 전기 에너지를 출력. 만약 입사되는 빛 에너지가 수용 가능한 범위를 넘으면 포화 상태가 되어 출력 전자량은 더 이상 증가하지 않게 된다.     
+필름의 로그 노광 범위와 같은 개념. 
+
+**꼭 보기**
+[Foundry-Color Management Fundamentals & ACES Workflows in NUKE](https://learn.foundry.com/course/5515/view/color-management-fundamentals-aces-workflows-in-nuke)
+
 https://blog.frame.io/2019/09/09/guide-to-aces/  
 https://www.oscars.org/science-technology/sci-tech-projects/aces  
-https://learn.foundry.com/course/5515/view/color-management-fundamentals-aces-workflows-in-nuke  
-https://blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=baekhyebin&logNo=222092359528  
-http://journal.kobeta.com/%EC%B0%B8%EA%B4%80%EA%B8%B0-aces-%EC%8B%9C%EC%8A%A4%ED%85%9C/  
-http://schoolofcolor.org/post-hdtv-part-2/
+
+ 
 
 ## Premultiplication  
+디지털 이미지는 기본적으로 RGB 3개 채널로 구성됨. 여기에 알파 채널이라는 투명도의 개념을 더하면 RGBA
+
+RGBA에는 
 Multipl 하기 전. 
 https://www.schoolofmotion.com/blog/premultiplication/  
 https://nanite.tistory.com/98  
