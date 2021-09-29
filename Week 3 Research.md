@@ -65,7 +65,7 @@ https://frauniemand.tistory.com/8
 [방송기술저널, ACES 시스템을 활용한 HDR](http://journal.kobeta.com/%EC%B0%B8%EA%B4%80%EA%B8%B0-aces-%EC%8B%9C%EC%8A%A4%ED%85%9C/)
 
 
-<img src="https://i1.wp.com/schoolofcolor.org/wp-content/uploads/2018/11/Post_HDTV_Workflow_Part_II_03.jpg?resize=768%2C866" width="300" height="500">
+<img src="https://i1.wp.com/schoolofcolor.org/wp-content/uploads/2018/11/Post_HDTV_Workflow_Part_II_03.jpg?resize=768%2C866" width="300" height="400">
 
 **ACES의 장점**   
 1. 후반작업에서의 색보정 불확실성 제거 International Standard Transformation 
