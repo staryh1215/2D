@@ -34,6 +34,8 @@ jpg 소스는 이미 사진을 찍을 때 gamma 2.2가 적용되어 밝아져 �
 텍스쳐 감마를 1로 만든 다음 최종 아웃풋 전까지 gamma 1의 Linear 상태의 **원본으로 작업** 하는 것을 **Linear Workflow** 라고 함.   
 [Maya Linear Workflow and Gamma](https://blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=zinblue&logNo=140199808147) 
 
+http://rapapa.net/?p=3406      
+https://news.samsungdisplay.com/1869/     
 
 ## Linear Workflow  
 모든 그래픽 작업이 **선형 색 공간 Linear Color Space** 에서 이루어지는 방식.    
