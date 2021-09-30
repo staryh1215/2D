@@ -127,7 +127,7 @@ Merge(over)의 공식은 [A+B(1-a]
 7에서 이미지 A에 알파 채널을 곱하는 단계가 Premultiplication(Pre-multiplication/Premult node)
 [What is Premultiplication?](https://www.schoolofmotion.com/blog/premultiplication/)
 
-**RGBA**
+## RGBA
 [알파 채널(투명도)의 두 가지 표현 방식](https://nanite.tistory.com/98)
 RGBA에는 두 가지 형식이 있음.   
 1. straight alpha(unassociated alpha; unmatted RGB+alpha)
