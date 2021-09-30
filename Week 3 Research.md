@@ -88,7 +88,7 @@ https://www.oscars.org/science-technology/sci-tech-projects/aces
 
 ## Premultiplication  
 
-(https://images.schoolofmotion.com/w950/2af90e3d-2aad-41a2-bd03-c890772357d7/01.jpg)
+!(https://images.schoolofmotion.com/w950/2af90e3d-2aad-41a2-bd03-c890772357d7/01.jpg)
 
 RGBA에는 
 Multipl 하기 전. 
