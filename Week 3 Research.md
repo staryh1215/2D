@@ -89,6 +89,35 @@ https://www.oscars.org/science-technology/sci-tech-projects/aces
 ## Premultiplication  
 
 ![Premultiplication](https://images.schoolofmotion.com/w950/2af90e3d-2aad-41a2-bd03-c890772357d7/01.jpg)
+A는 위에 올라갈 물체, B는 배경.    
+
+![Premultiplication](https://images.schoolofmotion.com/w950/1c2d6174-ce81-480b-bcd3-8046ad027d39/02.jpg)
+A에는 a라는 알파 채널이 있음.
+
+누크의 node 창에서 "Merge" 노드를 만들고 A와 B를 연결시키면, 두 이미지가 겹쳐짐.    
+Merge(over)의 공식은 [A+B(1-a]
+
+![Premultiplication](https://images.schoolofmotion.com/w950/dc65137b-6759-4ec7-b30c-f4c6f171463a/05.jpg)
+
+이미지로 보면 이렇게 됨. 
+
+위 공식에서 (1-a)란, A의 이미지에서 우리가 필요한 부분만을 잘라내는 것.   
+알파채널에서 흰색은 1, 검정은 0, 회색은 0.5의 값을 가짐. 흰 색은 눈에 보이는 부분, 검은 색은 보이지 않는 부분이 됨. 
+
+![Premultiplication](https://images.schoolofmotion.com/w950/85f72aa2-c843-4935-8299-1aae2a10eb1e/06.jpg)
+
+결과적으로 (1-a)는 이렇게 되는 것. 
+
+이후, 반전된 알파 채널(우리가 필요한 부분이 사라진 알파 채널)에 B를 곱함.   
+앞서 말한 것처럼 알파 채널에서 흰색은 1, 검정은 0의 값을 가지기 때문에 B가 가지고 있는 값에 반전된 알파 채널의 검은 부분(=0)을 곱하게 되면 그 부분은 사라짐. 
+
+![Premultiplication](https://images.schoolofmotion.com/w950/a3e606e5-f43d-4fcd-83b7-36c6e82ec253/11.jpg)
+
+
+
+![Premultiplication]
+
+![Premultiplication]
 
 RGBA에는 
 Multipl 하기 전. 
