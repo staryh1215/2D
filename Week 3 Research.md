@@ -125,8 +125,10 @@ Merge(over)의 공식은 [A+B(1-a]
 
 그래야만 우리가 의도했던 것과 같은 결과를 얻을 수 있음.    
 7에서 이미지 A에 알파 채널을 곱하는 단계가 Premultiplication(Pre-multiplication/Premult node)
+[What is Premultiplication?](https://www.schoolofmotion.com/blog/premultiplication/)
 
-**RGBA**    
+**RGBA**
+[알파 채널(투명도)의 두 가지 표현 방식](https://nanite.tistory.com/98)
 RGBA에는 두 가지 형식이 있음.   
 1. straight alpha(unassociated alpha; unmatted RGB+alpha)
 2. premultiplied alpha(associated alpha; matted RGB+alpha)
@@ -144,4 +146,4 @@ pre-multiplied가 의미하듯, 알파 값을 RGB에 미리 곱해둔 것.
 ![Premultiplied alpha](https://t1.daumcdn.net/cfile/tistory/99C8A5495C0FD14314)  
 
 포토샵에서는 작업의 편의성을 위해 non-premultiplied alpha 채널만을 활용하고 있음.   
-누크에서는 합성 시에 premult node를 사용해 활용 가능.   
+누크에서는 합성 시에 premult node를 사용해 활용 가능.
