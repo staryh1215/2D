@@ -51,13 +51,13 @@ binary는 1과 0 단 두개의 상태, 즉 on과 off 또는 high와 low만을 �
 [99designs](https://99designs.com/blog/tips/correct-file-formats-rgb-and-cmyk/)     
 빛의 3원색을 _가산혼합_ 하여 색을 나타내는 방식. 각각 0~255까지의 숫자를 사용해 그 정도를 표현함.     
 Ex. (0,0,0): 검은색 / (255,255,255): 흰색 / (255,0,0): 빨강
-[두산백과](https://terms.naver.com/entry.naver?docId=3340558&cid=40942&categoryId=32828)
+[두산백과](https://terms.naver.com/entry.naver?docId=3340558&cid=40942&categoryId=32828)        
 <img src="https://www.hisour.com/wp-content/uploads/2018/03/RGB-color-model.jpg" width="300" height="300">
 
 **CMYK**
 : 시안Cyan, 마젠타Magenta, 노랑Yellow, 검정Black으로 이루어진 잉크 색 구현 채계. 주로 인쇄물에서 색을 표현하기 위해 사용됨.
 [두산백과](https://terms.naver.com/entry.naver?docId=3347335&cid=40942&categoryId=32828)      
-색상값이 올라갈 때 색이 어두워지며 검정색에 가까워지는 _감산혼합_ 방식. 
+색상값이 올라갈 때 색이 어두워지며 검정색에 가까워지는 _감산혼합_ 방식.    
 <img src="https://cdn-befan.nitrocdn.com/ZqEoWphcmcAXQbFBKaYjfUBYIqNFiJSC/assets/static/optimized/rev-4b3697d/wp-content/uploads/2020/06/CYMK-colors.png" width="300" height="300">
 
 **Bit**
