@@ -128,7 +128,7 @@ Merge(over)의 공식은 [A+B(1-a]
 [What is Premultiplication?](https://www.schoolofmotion.com/blog/premultiplication/)
 
 ## RGBA
-[알파 채널(투명도)의 두 가지 표현 방식](https://nanite.tistory.com/98)
+[알파 채널(투명도)의 두 가지 표현 방식](https://nanite.tistory.com/98)     
 RGBA에는 두 가지 형식이 있음.   
 1. straight alpha(unassociated alpha; unmatted RGB+alpha)
 2. premultiplied alpha(associated alpha; matted RGB+alpha)
