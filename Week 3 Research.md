@@ -88,45 +88,60 @@ https://www.oscars.org/science-technology/sci-tech-projects/aces
 
 ## Premultiplication  
 
-![Premultiplication](https://images.schoolofmotion.com/w950/2af90e3d-2aad-41a2-bd03-c890772357d7/01.jpg)
-A는 위에 올라갈 물체, B는 배경.    
+![Premultiplication](https://images.schoolofmotion.com/w950/2af90e3d-2aad-41a2-bd03-c890772357d7/01.jpg)   
+1. A는 위에 올라갈 물체, B는 배경.    
 
-![Premultiplication](https://images.schoolofmotion.com/w950/1c2d6174-ce81-480b-bcd3-8046ad027d39/02.jpg)
-A에는 a라는 알파 채널이 있음.
+![Premultiplication](https://images.schoolofmotion.com/w950/1c2d6174-ce81-480b-bcd3-8046ad027d39/02.jpg)   
+2. A에는 a라는 알파 채널이 있음.
 
 누크의 node 창에서 "Merge" 노드를 만들고 A와 B를 연결시키면, 두 이미지가 겹쳐짐.    
 Merge(over)의 공식은 [A+B(1-a]
 
 ![Premultiplication](https://images.schoolofmotion.com/w950/dc65137b-6759-4ec7-b30c-f4c6f171463a/05.jpg)
 
-이미지로 보면 이렇게 됨. 
+3. 이미지로 보면 이렇게 됨. 
 
 위 공식에서 (1-a)란, A의 이미지에서 우리가 필요한 부분만을 잘라내는 것.   
 알파채널에서 흰색은 1, 검정은 0, 회색은 0.5의 값을 가짐. 흰 색은 눈에 보이는 부분, 검은 색은 보이지 않는 부분이 됨. 
 
 ![Premultiplication](https://images.schoolofmotion.com/w950/85f72aa2-c843-4935-8299-1aae2a10eb1e/06.jpg)
 
-결과적으로 (1-a)는 이렇게 되는 것. 
+4. 결과적으로 (1-a)는 이렇게 되는 것. 
 
-이후, 반전된 알파 채널(우리가 필요한 부분이 사라진 알파 채널)에 B를 곱함.   
+5. 이후, 반전된 알파 채널(우리가 필요한 부분이 사라진 알파 채널)에 B를 곱함.   
 앞서 말한 것처럼 알파 채널에서 흰색은 1, 검정은 0의 값을 가지기 때문에 B가 가지고 있는 값에 반전된 알파 채널의 검은 부분(=0)을 곱하게 되면 그 부분은 사라짐. 
 
-![Premultiplication](https://images.schoolofmotion.com/w950/a3e606e5-f43d-4fcd-83b7-36c6e82ec253/11.jpg)
+![Premultiplication](https://images.schoolofmotion.com/w950/a3e606e5-f43d-4fcd-83b7-36c6e82ec253/11.jpg)    
+![Premultiplication](https://images.schoolofmotion.com/w950/3dcedc20-81ec-424d-bd35-43ad973371cf/12.jpg)
 
+6. 이제 A와 B(1-a)를 더하면 되지만, 이대로 더하게 되면 파란색 픽셀이 표시되어야 하는 곳이 하얗게 변함.   
+파란색 픽셀에 노란색 픽셀을 추가하면 실제로는 1보다 큰 RGB 값을 갖게 되어 Superwhite가 되는 것.  
 
+![Premultiplication](https://images.schoolofmotion.com/w950/a0349ac3-6fb7-41cf-8d92-1babe34bb67b/14.jpg)
 
-![Premultiplication]
+7. 따라서, 이미지 A가 갖고 있던 알파 채널을 곱해서 우리가 필요한 노란색 부분만을 남겨야 함.
 
-![Premultiplication]
+![Premultiplication](https://images.schoolofmotion.com/w950/256bd13d-4436-416f-b4c1-31c414cac6ab/15.jpg)
 
-RGBA에는 
-Multipl 하기 전. 
-https://www.schoolofmotion.com/blog/premultiplication/  
-https://nanite.tistory.com/98  
+그래야만 우리가 의도했던 것과 같은 결과를 얻을 수 있음.    
+7에서 이미지 A에 알파 채널을 곱하는 단계가 Premultiplication(Pre-multiplication/Premult node)
 
-**포토샵에서**   
-https://limnu.com/premultiplied-alpha-primer-artists/  
-https://forums.cgsociety.org/t/unpremultiplied-alpha-in-photoshop/1053929  
-**누크에서**  
-Premult / UnPremult  
-Merge  
+**RGBA**    
+RGBA에는 두 가지 형식이 있음.   
+1. straight alpha(unassociated alpha; unmatted RGB+alpha)
+2. premultiplied alpha(associated alpha; matted RGB+alpha)
+
+**Straight alpha**   
+straight alpha는 "non-premultiplied alpha" 또는 "unassociated alpha"라고도 부르며 흔하게 사용되는 알파 형식.   
+이 방식에서의 RGBA는 알파 값만이 투명도를 나타내며 RGB는 각각 투명도에 관계 없이 빨강, 초록, 파랑의 강도만을 표현. 
+![Straight alpha](https://t1.daumcdn.net/cfile/tistory/9975123B5C0FD14335)   
+따라서 사진에서 볼 수 있다시피 RGB채널에서는 글자가 온전히 불투명하게 보이고, alpha 채널에서만 투명도가 적용됨. 
+
+**Premultiplied alpha**    
+premultiplied alpha는 associated alpha라고도 부르며, 이미지의 필터링/혼합에 적합.   
+pre-multiplied가 의미하듯, 알파 값을 RGB에 미리 곱해둔 것.   
+그렇기 때문에 RGB의 값은 그 자체로 색상 값과 투명도를 반영하고 있으며, 알파 값은 그래픽 처리를 위해 부수적으로 존재하게 됨.   
+![Premultiplied alpha](https://t1.daumcdn.net/cfile/tistory/99C8A5495C0FD14314)  
+
+포토샵에서는 작업의 편의성을 위해 non-premultiplied alpha 채널만을 활용하고 있음.   
+누크에서는 합성 시에 premult node를 사용해 활용 가능.   
