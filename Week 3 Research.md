@@ -87,7 +87,8 @@ https://www.oscars.org/science-technology/sci-tech-projects/aces
  
 
 ## Premultiplication  
-디지털 이미지는 기본적으로 RGB 3개 채널로 구성됨. 여기에 알파 채널이라는 투명도의 개념을 더하면 RGBA
+
+(https://images.schoolofmotion.com/w950/2af90e3d-2aad-41a2-bd03-c890772357d7/01.jpg)
 
 RGBA에는 
 Multipl 하기 전. 
