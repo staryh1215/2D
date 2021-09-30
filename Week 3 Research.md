@@ -133,8 +133,8 @@ RGBA에는 두 가지 형식이 있음.
 
 **Straight alpha**   
 straight alpha는 "non-premultiplied alpha" 또는 "unassociated alpha"라고도 부르며 흔하게 사용되는 알파 형식.   
-이 방식에서의 RGBA는 알파 값만이 투명도를 나타내며 RGB는 각각 투명도에 관계 없이 빨강, 초록, 파랑의 강도만을 표현. 
-![Straight alpha](https://t1.daumcdn.net/cfile/tistory/9975123B5C0FD14335)   
+이 방식에서의 RGBA는 알파 값만이 투명도를 나타내며 RGB는 각각 투명도에 관계 없이 빨강, 초록, 파랑의 강도만을 표현.    
+![Straight alpha](https://t1.daumcdn.net/cfile/tistory/9975123B5C0FD14335)    
 따라서 사진에서 볼 수 있다시피 RGB채널에서는 글자가 온전히 불투명하게 보이고, alpha 채널에서만 투명도가 적용됨. 
 
 **Premultiplied alpha**    
