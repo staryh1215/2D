@@ -9,3 +9,4 @@ Merge over: A+B*(1`a)
 A: input A's RGB / B: input B's RGB / a: input A's alpha / b: input B's alpha     
 **Merge(over)을 할 때는 꼭 위에 올라가는 대상에 Roto(alpha)[o], Transform[T]가 들어가야 함**
 
+dot: node 창에 텍스트 쓸 수 있음
