@@ -18,7 +18,8 @@
 6. [P] RotoPaint node 생성   
 7. Roto node에 Shuffle node 생성 후 연결  
 8. Shuffle에서 R, G, B, A 연결 전부 풀어주고 좌측 A랑 우측 R 연결
-9. write 파일 포맷은 .dpx, .exr. Roto shape만 있는 경우에는 .dpx (.dpx: vpx, 편집에서 거의 표준으로 쓰는 rgb 데이터가 포함된 포맷. 렌더링 할 때는 반드시 rgb로 해야 함.)
+9. write 파일 포맷은 .dpx, .exr. Roto shape만 있는 경우에는 .dpx (.dpx: vpx, 편집에서 거의 표준으로 쓰는 rgb 데이터가 포함된 포맷. 렌더링 할 때는 반드시 rgb로 해야 함.) 
+9-1. **파일명 입력할 때 (파일이름).####.dpx로 해줘야 함 #### 없으면 렌더링 불가능**
 10. .dpx 파일 누크로 불러오기
 11. copy node 생성해서 .dpx 파일(A)랑 원본 플레이트(B)에 연결(A에서 B로 넘겨준다)
 12. Copy node에서 Copy channel을 [rgb.red] to [rgb.alpha]로 바꿔주기
