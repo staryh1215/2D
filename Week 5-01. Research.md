@@ -10,8 +10,8 @@
   서양인들 중에서는 파란 눈을 가진 사람이 많기 때문에 그린 스크린을 많이 사용
 [시선뉴스](https://www.sisunnews.co.kr/news/articleView.html?idxno=42927)
 
-하지만 배경 색을 고를 때는 반드시 어떤 대상을 촬영하는지 고려하며 선택해야 함. 
-![블루스크린과 그린스크린 비교](https://user-images.githubusercontent.com/90232599/137173602-a35affb3-c224-41cf-84f6-aa4869404d65.jpg)
+하지만 배경 색을 고를 때는 반드시 어떤 대상을 촬영하는지 고려하며 선택해야 함.       
+![블루스크린과 그린스크린 비교](https://user-images.githubusercontent.com/90232599/137173602-a35affb3-c224-41cf-84f6-aa4869404d65.jpg)     
 [김준수, "매트처리를 통한 영상합성에 있어서 크로마키 분석", 디자인지식저널 34, 2015.6]
 
 **크로마키의 역사**    
