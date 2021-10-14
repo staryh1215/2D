@@ -17,11 +17,36 @@
 **크로마키의 역사**    
 [Hollywood's History of Faking It-The Evolution of Greenscreen Compositing](https://www.youtube.com/watch?v=H8aoUXjSfsI&ab_channel=FilmmakerIQ)
 
+**크로마키 촬영**   
+크로마키로 촬영할 때는 합성할 대상(사람)의 뒤에 있는 배경에 최대한 그림자가 지지 않고 단색을 유지하도록 조명을 쳐야 함.   
+때문에 조명을 여러 개 사용하며 X자로 조명을 치는 편.    
+
+
 **가상스튜디오**    
 : 가상현실을 구현하기 위한 촬영 공간     
 가상 스튜디오에서 촬영한 인물의 실사 화면에 컴퓨터 그래픽으로 제작한 영상을 가상의 공간에 위치시켜 3차원 영상을 구현     
 스튜디오 설계 시 내부는 Green 혹은 Blue - 배경과 인물의 경계면을 구분해 매트(Matte)처리를 하기 위함 
 벽면과 바닥의 경계는 _곡면_ 으로 처리하는데, 이는 조명으로 인한 벽면의 색상 차이를 최소화시키기 위함.      
 [김준수, "디지털 영상합성에 있어서 크로마키와 디지털 색보정", 디지털디자인학연구, 2009.7]   
+
+
+**Keyers**    
+Utility    
+1. Keyer: 간단하게 배경과 오브젝트를 분리할 때. 
+2. HueKeyer: 지정한 색상을 알파로 빼버림.
+3. Difference: A와 B 인풋의 차이를 바로 알파로 빼버림. 
+
+(Big) Screen   
+1. Keylight: 주로 많이 사용함
+2. Ultimatte: 실제 기계 장비에도 들어있는 알고리즘. 방송국에서도 사용 중. 
+3. Primatte: 실제 기계 장비에도 들어있는 알고리즘. 방송국에서도 사용 중. 
+4. IBKGizmoV3: 인물 헤어와 같은 디테일이 많은 경우 사용. 소프트하게 빠짐. 하지만 크로마 배경이 촬영되지 않은 경우 어려울 가능성. 
+5. ChromaKeyer: 색상을 지정해서 키로 빼는 것. 
+
+모두 같은 것들. 하지만 촬영본들이 각각 다르기 때문에 다른 노드를 사용해주는 것. 
+
+**Keyer로 모든 게 깔끔하게 알파로 빠지지 않음. 필요할 때는 Roto로 따로 작업을 해줘야 함.**
+
++ [Green Screen Plates](https://www.hollywoodcamerawork.com/green-screen-plates.html) 
 
 
