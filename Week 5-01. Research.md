@@ -50,3 +50,28 @@ Utility
 + [Green Screen Plates](https://www.hollywoodcamerawork.com/green-screen-plates.html) 
 
 
+## [Nuke - Keylight](https://learn.foundry.com/nuke/content/reference_guide/keyer_nodes/keylight.html)
+
+배경에서 파란색/녹색 스필을 제거하려면 Despill Bias를 사용. 
+
+**Input**   
+1. bg: 블루/그린스크린을 대체하고 합성될 배경
+2. OutM: Outside Mask, Garbage Matte. 배경에서 불필요한 요소들을 삭제하는 데에 사용됨
+3. InM: Inside Mask, Holdout Matte. 전경(분리해서 사용할 개체)의 영역
+4. Source: 키 작업을 할 전경(분리해서 사용할 개체) 이미지
+
+**Control**
+1. alphaBias: 화면의 색이 파란색이나 녹색이 아니고, 그래서 전경의 일부가 투명해지는 경우 사용. 전경 중 영향을 받는 부분의 색상을 선택.
+2. despillBias: 전경의 주변에 남은 디스필들을 제거. 머리색과 피부색을 활용. 디스필에 alphabias가 활성화 되어 있어야만 사용 가능. 
+3. gangBiases: alphabias 색을 despillbias 색으로 사용. 
+
+**Keylight**   
+1. insidecomponent: InM 인풋에서 Inside Mask로 사용할 요소들과 관련된 기능 조절. 
+2. outsidecomponent: InM 인풋에서 Outside Mask로 사용할 요소들과 관련된 기능 조절. 
+
+[Keying with Keylight](https://learn.foundry.com/nuke/content/comp_environment/keying_with_keylight/keying_keylight.html)    
+[Keying with ChromaKeyer](https://learn.foundry.com/nuke/content/comp_environment/keying_with_chromakeyer/keying_chromakeyer.html)   
+[Keying with Primatte](https://learn.foundry.com/nuke/content/comp_environment/keying_with_primatte/keying_primatte.html)   
+[Keying with Ultimatte](https://learn.foundry.com/nuke/content/comp_environment/keying_with_ultimatte/keying_ultimatte.html)   
+
+
