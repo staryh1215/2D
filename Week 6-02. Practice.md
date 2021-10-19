@@ -68,7 +68,10 @@ size 노브를 조정해서 블랙의 영역을 없애주고, IBKGizmo의 bg에 
 그렇지만 이런 과정을 통해서도 완벽하게 키가 빠지지는 않음. 빼내야 하는 대상의 영역에서 알파 값이 남아 있어 Checkerboard-Merge(over) 노드를 통해 보면 체커보드가 보이는 것으로 확인 가능.    
 <br/>
 
-이 때 활용되는 것이 Soft Key, Hard Key.    
+
+## Soft Key / Hard Key
+
+위와 같은 상황에서 활용되는 것이 Soft Key, Hard Key.    
 
 **Soft Key**: 외부의 디테일    
 
@@ -87,8 +90,11 @@ Premult 노드로 확인해보면 그린스크린 색이 많이 남아 있음.
 HueCorrect 노드에서 그린 스크린 영역을 플레이트 상에서 지정한 후 그래프에서 색상 조정해주면 교정 가능.    
 * 플레이트에서 고른 색만 그래프에서 조정하는 법: 뷰어 화면에서 교정할 색 지정 - HueCorrect 노드 그래프에서 ctrl+alt 누르면 해당 지점만 점 찍기 가능. 그대로 수치 낮춰주면 교정.    
 
-그래도 아직 Despill이 있을 때 - Despillmadness 사용하기.    
+그래도 아직 Despill이 있을 때 - **Despillmadness** 사용하기.    
 그린스크린이 회색빛으로 바뀜 - 추출하는 플레이트에 묻은 색이 자연스러운 색상으로 변함. 
+
+추출한 플레이트에 그린스크린 색이 묻어 있을 때 색상 디테일 살리는 방법: ColorSmear
+
 
 <br/>
 
@@ -96,4 +102,16 @@ HueCorrect 노드에서 그린 스크린 영역을 플레이트 상에서 지정
 * Keyer를 바꿔가면서 써도 됨
 * Keymix를 통해서 여러 파트로 나눠서 작업해도 됨
 
+<br/>
 
+## Grade
+Black point / White Point: Keylight의 Clip black / white와 유사한 기능.   
+lift: linear 커브에서 가장 밝은 부분인 (1,1)은 그대로 둔 채 어두운 영역부터 값을 조정함.    
+offset: 기존의 linear 커브와 평행하게 커브를 이동시키며 전체적인 명암 조정.    
+gamma: 블랙(0,0), 화이트(1,1) 값은 고정한 채 중간 값만 조정. 
+gain: 화이트를 기준으로 수치를 곱해주는 것. 
+multiply: rgb 픽셀에 수치를 곱해주는 노브.    
+
+## ColorCorrec
+Shadow / Midtone / Highlight 조정    
+Ranges 탭에서 각 영역의 범위 확인 가능    
