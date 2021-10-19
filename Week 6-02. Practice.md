@@ -81,7 +81,7 @@ Keylight을 내부 영역에서 Clip black과 Clip White 수치를 조정해 알
 작업하다보면 Hard Key가 Soft Key보다 넓어지거나, 정해진 범위 밖으로 뚫고 나와 Soft Key의 영역을 침범하는 경우가 발생함. 이 때 Erode필터인 FilterErode 노드를 사용해 Hard Key 매트를 조금 더 내부로 사이즈를 줄여줌.      
 Hard Key와 Soft Key의 분리가 너무 딱딱하면 Blur 노드를 통해 부드럽게 바꿔줄 수 있음. channel - alpha로 변경해서 사용해야 함.   
 
-Soft Key와 Hard Key를 합쳐주는 방법: **ChannerMerge(alpha∪alpha)**    
+Soft Key와 Hard Key를 합쳐주는 방법: **ChannelMerge(alpha∪alpha)**    
 그냥 copy를 쓰면 둘이 분리되는 것이 아니라 인풋이 그냥 넘어가기 때문에 사용X     
 Soft Key와 hard Key를 합쳐준 ChannelMerge(A)랑 원본 플레이트(B)를 Copy로 연결시킴     
 
