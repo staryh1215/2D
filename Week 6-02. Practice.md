@@ -35,3 +35,24 @@ Smart Select BG color: 스포이드로 그린스크린 색 빼기
 Clean BG Noise: BG에 해당하는 노이즈들을 ctrl+클릭해서 알파로 빼줌.     
 Clean FG Noise: 앞서 알파로 빼면서 FG로 남아야 하는 부분까지 넘어간 곳을 빼줌     
 Spill(-): 스필을 없애주는 기능. 하지만 컬러 자체를 조정하는 기능이기 때문에 조심해서 사용해야.     
+
+<br/>
+
+.dng: 디지털 카메라로 촬영한 원본 파일인 raw 파일들(.cr2, .arw. ...)을 공용 포맷으로 바꿔놓은 것.
+
+
+1. 소스 불러오기
+2. Denoise 노드 달아서 수치 조정하며 노이즈 없애기
+3. Keylight 생성
+4. 스크린 색 스포이드로 지정
+5. Screen Matte에서 Clip Black 값 조정하기
+6. 여러 부분으로 나눠 알파채널 빼줘야 하면 2~4 반복
+7. 헷갈릴 수도 있으니 각각 파트 별로 이름 달아주기!
+8. Keymix 노드 생성
+9. 왼쪽에 있는 Keylight(A), 베이스가 되는 Keylight(B)로 연결
+10. Roto 노드 생성 후 mask 인풋으로 연결
+11. A인풋에서 필요한 만큼 Roto로 영역 따주기
+12. 이 Keymix 밑으로 또 Keymix 달아주면서 다른 Keylight들도 합쳐주기
+13. Premult 노드 생성 후 마지막 Keylight에 연결
+14. Checkerboard - Merge(over) 생성 후 Premult에 연결
+15. 확인해보면 키로 뺀 대상에서 블랙에 가까운 부분은 체커보드가 보임. 해당 영역 담당하는 Keylight로 가서 Clip white 미세하게 조절하면서 알파 완성해주기. 
