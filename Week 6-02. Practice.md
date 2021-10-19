@@ -54,5 +54,46 @@ Spill(-): 스필을 없애주는 기능. 하지만 컬러 자체를 조정하는
 11. A인풋에서 필요한 만큼 Roto로 영역 따주기
 12. 이 Keymix 밑으로 또 Keymix 달아주면서 다른 Keylight들도 합쳐주기
 13. Premult 노드 생성 후 마지막 Keylight에 연결
-14. Checkerboard - Merge(over) 생성 후 Premult에 연결
+14. Checkerboard - Merge(over) 생성 후 Premult에 Keylight(A), Checkerboard(B) 연결
 15. 확인해보면 키로 뺀 대상에서 블랙에 가까운 부분은 체커보드가 보임. 해당 영역 담당하는 Keylight로 가서 Clip white 미세하게 조절하면서 알파 완성해주기. 
+16. 카메라가 움직이면서 로토도 따라서 애니메이션 되어야 함. 프레임 따라가면서 조정해주기. 
+
+## IBK Gizmo / IBK Colour
+IBK: Image Based Keying    
+배우+배경 장면(A)을 촬영하고, 배우가 없는 배경(B)을 똑같이 따로 촬영함.   
+IBK Gizmo의 fg에 (A)를 연결하고, IBK Colour 혹은 IBK Gizmo 노드의 C에 (B)플레이트를 얹으면 A와 B의 차이를 계산해서 알파채널을 뽑아냄.    
+
+IBK Colour에서 스크린 유형(green/blue)을 결정하고 나면 그 색이 아닌 영역이 블랙으로 빠짐.    
+size 노브를 조정해서 블랙의 영역을 없애주고, IBKGizmo의 bg에 연결시켜주면 그 차이를 이용해서 키가 빠짐.   
+그렇지만 이런 과정을 통해서도 완벽하게 키가 빠지지는 않음. 빼내야 하는 대상의 영역에서 알파 값이 남아 있어 Checkerboard-Merge(over) 노드를 통해 보면 체커보드가 보이는 것으로 확인 가능.    
+<br/>
+
+이 때 활용되는 것이 Soft Key, Hard Key.    
+
+**Soft Key**: 외부의 디테일    
+
+**Hard Key**: Key를 따야 하는 내부의 영역. 완벽하게 알파가 1로 나와야 하는 부분.    
+Keylight을 내부 영역에서 Clip black과 Clip White 수치를 조정해 알파로 빼줘도 됨. 
+
+작업하다보면 Hard Key가 Soft Key보다 넓어지거나, 정해진 범위 밖으로 뚫고 나와 Soft Key의 영역을 침범하는 경우가 발생함. 이 때 Erode필터인 FilterErode 노드를 사용해 Hard Key 매트를 조금 더 내부로 사이즈를 줄여줌.      
+Hard Key와 Soft Key의 분리가 너무 딱딱하면 Blur 노드를 통해 부드럽게 바꿔줄 수 있음. channel - alpha로 변경해서 사용해야 함.   
+
+Soft Key와 Hard Key를 합쳐주는 방법: **ChannerMerge(alpha∪alpha)**    
+그냥 copy를 쓰면 둘이 분리되는 것이 아니라 인풋이 그냥 넘어가기 때문에 사용X     
+Soft Key와 hard Key를 합쳐준 ChannelMerge(A)랑 원본 플레이트(B)를 Copy로 연결시킴     
+
+Premult 노드로 확인해보면 그린스크린 색이 많이 남아 있음.  
+이 때 Despill 작업을 위해 사용해주는 노드가 HueCorrect(Copy와 원본 플레이트 사이에 연결시키기)       
+HueCorrect 노드에서 그린 스크린 영역을 플레이트 상에서 지정한 후 그래프에서 색상 조정해주면 교정 가능.    
+* 플레이트에서 고른 색만 그래프에서 조정하는 법: 뷰어 화면에서 교정할 색 지정 - HueCorrect 노드 그래프에서 ctrl+alt 누르면 해당 지점만 점 찍기 가능. 그대로 수치 낮춰주면 교정.    
+
+그래도 아직 Despill이 있을 때 - Despillmadness 사용하기.    
+그린스크린이 회색빛으로 바뀜 - 추출하는 플레이트에 묻은 색이 자연스러운 색상으로 변함. 
+
+<br/>
+
+* Keyer는 여러 개를 써도 됨
+* Keyer를 바꿔가면서 써도 됨
+* Keymix를 통해서 여러 파트로 나눠서 작업해도 됨
+
+
