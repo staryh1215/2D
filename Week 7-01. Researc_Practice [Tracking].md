@@ -56,8 +56,8 @@ Tracker 노드의 Tracker tab - Export
 에서 Transform(stablize): 트래킹을 역으로 계산, 트래킹앵커가 있던 부분만 고정되어 있고 다른 부분이 움직이도록 함.  
 
 
-**왜 로토로 따낸 부분을 merge(over)했는데 더 밝아져서 플레이트에 올라가지?? 
-**
+**왜 로토로 따낸 부분을 merge(over)했는데 더 밝아져서 플레이트에 올라가지??**   
+ - *알파채널 문제 때문임* 이럴 때는 플레이트 밑에 shuffle 노드를 달아주고 알파채널을 끄면 해결됨  
 
 
 **2 Points Tracking**   
@@ -68,4 +68,5 @@ Tracker 노드의 Tracker tab - Export
 
 Tracker 탭에서 여러 점들을 모두 선택하고 ConerPin2D 노드 export 후, 이미지를 불러 와 연결시켜주면 해당 점들의 기울기/위치에 맞게 이미지의 형태가 변형됨   
 Ex. 컴퓨터 모니터에 이미지 합성하기 등 
+
 
