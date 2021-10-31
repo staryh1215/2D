@@ -66,10 +66,10 @@ Tracker 노드의 Tracker tab - Export
 
 
 **4 Points Tracking**    
-Tracker 노드로 트래킹 앵커 4개 생성 후, Export - ConerPin2D(use current frame) 만들기
-이후, 합성하고 싶은 이미지를 불러오고 해당 이미지에 conerpin 노드 연결
-conerpin 노드의 From 탭에서 "Set to Input" 선택해주면 이미지가 코너핀으로 만들어놓은 면에 맞게 변형됨
-merge로 원래 플레이트와 합성한 이미지를 합쳐줌
+1. Tracker 노드로 트래킹 앵커 4개 생성 후, Export - ConerPin2D(use current frame) 만들기
+2. 이후, 합성하고 싶은 이미지를 불러오고 해당 이미지에 conerpin 노드 연결
+3. conerpin 노드의 From 탭에서 "Set to Input" 선택해주면 이미지가 코너핀으로 만들어놓은 면에 맞게 변형됨
+4. merge로 원래 플레이트와 합성한 이미지를 합쳐줌
  - 이 때, merge(over)로 하면 완전히 이미지 원본 그대로 합쳐짐(알파 때문에). 비친 모습이 살아 있어야 한다면 merge(screen)으로 바꿔주기 
 
 
