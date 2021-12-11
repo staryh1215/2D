@@ -1,18 +1,24 @@
-1. 기존 기획 피드백
+### 기존 기획 피드백
  - 12주차에 만든 공간의 오른쪽 부분이 너무 비어 보임
  - 전체적인 공간의 대비감과 합성한 요소들 간의 대비 맞춰주기
  - volume ray가 있는 이미지를 합성했기 때문에 누크에서 volume ray 기능을 활용해 보기
 
-2. 수정해야 할 사항
+<br/>
+
+### 수정해야 할 사항
  - 추가 합성 및 보정
  - volume ray 리서치
 
-3. R&D
-3-1. 추가 합성 및 보정
-좌 - 기존 합성 공간 / 우 – 추가 합성 및 보정 후
-  
+<br/>
 
-3-2. 바다 공간 플레이트 트래킹 / 마야 작업
+### R&D
+**3-1. 추가 합성 및 보정**   
+![Flower_MattePainting](https://user-images.githubusercontent.com/90232599/145673660-9dc721a5-402a-4d74-8e74-e54087473c28.png)
+![Flower_MattePainting_v02](https://user-images.githubusercontent.com/90232599/145673663-2cc33511-b21b-4d96-b027-2f9dda4b6c8f.png)  
+
+<br/>
+
+**3-2. 바다 공간 플레이트 트래킹 / 마야 작업**   
 플레이트 소스 출처: https://www.pexels.com/ko-kr/video/10132840/
   
 ![door](https://user-images.githubusercontent.com/90232599/145673430-bd663d87-b75e-4c03-a343-25a31c4825f1.jpg)
@@ -26,8 +32,10 @@
 - 원본 영상에서의 카메라 흔들림 때문에 트래킹 포인트가 제대로 잡히지 않음
 - 원본 영상 중에서 초점이 흐려지고 맞춰지는 구간이 있어 로토/합성에 어려움
 
-4. Research - [Volume Ray](https://en.wikipedia.org/wiki/Volumetric_lighting)   
-Volume Rays = Volumetric lighting, God Ray, Light Shaft, Crepuscular rays, ...   
+<br/>
+
+### Research - [Volume Ray](https://en.wikipedia.org/wiki/Volumetric_lighting)   
+**Volume Rays** = Volumetric lighting, God Ray, Light Shaft, Crepuscular rays, ...    
 3D 그래픽에서 렌더링된 scene에 조명 효과를 더해주는 것의 일종    
 공간 안에서 뚜렷하게 빛의 형태(광선)이 보이는 것이 특징이며, 3D로 이를 구현하면 현실에서 안개나 먼지, 연기, 증기와 같은 대기를 통과하는 빛의 효과를 보여줄 수 있음   
 
