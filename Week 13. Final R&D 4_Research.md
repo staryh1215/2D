@@ -24,6 +24,10 @@ noise 노드 리서치
 ![closet_flower](https://user-images.githubusercontent.com/90232599/145719873-97dd866c-c0bd-4a60-98c3-408af18d067c.png)
 ![compositing](https://user-images.githubusercontent.com/90232599/145719900-2d722ba3-e930-4ce8-b5f8-3abee98f270c.png)  
 
+**3-3. 추가 합성 및 보정**
+![Flower_MattePainting_EDIT_v02](https://user-images.githubusercontent.com/90232599/145723824-c0f1612e-e0e0-4d1e-8757-49aea2776964.png)  
+배경부 관목 레이어 추가, 누크에서 전체적으로 공간 z값 수정 / 카메라 애니메이션 수정   
+
 <br/> 
 
 - 옷장 영상 재촬영해보기.. 
