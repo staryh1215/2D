@@ -21,7 +21,6 @@ Forest - Grass 플레이트 자연스럽게 연결될 수 있는 방법 찾기
 2. Forest - Grass 플레이트 연결
 - Grass 매트페인팅 scene에 forest 플레이트에서 트래킹한 카메라 복사 붙여넣기
 - 카메라의 axis에 또 다른 카메라 연결시켜 애니메이션 주자 기존 카메라에 애니메이션 추가됨
-- 이후 Z depth 애니메이션 주며 Grass 플레이트 완성
 
 <br/>
 
